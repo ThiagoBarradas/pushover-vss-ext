@@ -22,7 +22,7 @@ Parameters include:
 
 ## Release notes
 
-**New in 1.0.0**
+**New in 1.0.2**
 - First version with basic notification;
 - Notification user, group and/or specific device;
 - Priority with retry ant expire options;
