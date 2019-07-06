@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "pushover",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Pushover Notification",
     "description": "Send notification to your smartphone with Pushover!",
     "public": true,
