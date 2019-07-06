@@ -1,0 +1,66 @@
+{
+    "manifestVersion": 1,
+    "id": "pushover",
+    "publisher": "ThiagoBarradas",
+    "version": "1.0.0",
+    "name": "Pushover Notification",
+    "description": "Send notification to your smartphone with Pushover!",
+    "public": true,
+    "links": {
+        "home": { "uri": "https://github.com/ThiagoBarradas/pushover-vss-ext#readme" },
+        "repository": { "uri": "https://github.com/ThiagoBarradas/pushover-vss-ext" },
+        "support": { "uri": "https://github.com/ThiagoBarradas/pushover-vss-ext/issues" },
+        "getstarted": { "uri": "https://github.com/ThiagoBarradas/pushover-vss-ext#readme" },
+        "privacypolicy": { "uri" : "https://gist.github.com/ThiagoBarradas/eb56552b4a71cf52141b85a6afa0e526" }
+    },
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "notification",
+        "alert",
+        "smartphone",
+        "push",
+        "push notification",
+        "pushover",
+        "release",
+        "build"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "targets": [
+        { "id": "Microsoft.VisualStudio.Services" }
+    ],
+    "content": {
+        "details": { "path": "README.md" },
+        "license": { "path": "LICENSE" }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ThiagoBarradas/pushover-vss-ext"
+    },
+    "contributions": [
+        {
+            "id": "pushover-notification",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "task" }
+        }
+    ],
+    "files": [
+        { 
+            "path": "task" 
+        },
+        { 
+            "path": "images", 
+            "addressable": true 
+        },
+        { 
+            "path": "node_modules", 
+            "packagePath": "task/node_modules" 
+        }
+    ]
+}
