@@ -19,6 +19,8 @@ async function run() {
         // install tools
         const args = new Array();
         args.push('-s');
+        args.push('-f');
+        
         args.push('--form-string');
         args.push('token=' + token);
         args.push('--form-string');
@@ -50,7 +52,9 @@ async function run() {
             args.push('--form-string');
             args.push('device=' + device);
         }
-
+        
+        args.push('-w');
+        args.push('\nStatusCode: %{http_code}\n\n');
 
         args.push(pushoverApi);
 
